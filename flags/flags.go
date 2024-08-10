@@ -34,13 +34,13 @@ var (
 		Name:   "treasure-manage-address",
 		Usage:  "Address of the treasure manager contract",
 		EnvVar: prefixEnvVar("TREASURE_MANAGER_ADDRESS"),
-		Value:  "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+		Value:  "0x0B306BF915C4d645ff596e518fAf3F9669b97016",
 	}
 	WithdrawManagerAddressFlag = cli.StringFlag{
 		Name:   "treasure-manage-address",
 		Usage:  "Address of the treasure manager contract",
 		EnvVar: prefixEnvVar("WITHDRAW_MANAGER_ADDRESS"),
-		Value:  "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+		Value:  "0xa0Ee7A142d267C1f36714E4a8F75612F20a79720",
 	}
 	LoopIntervalFlag = cli.DurationFlag{
 		Name:   "loop-interval",

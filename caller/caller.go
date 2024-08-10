@@ -194,7 +194,7 @@ func (c *ContractCaller) setWithdrawManagerTx(ctx context.Context, address ethc.
 		return tx, nil
 
 	case c.IsMaxPriorityFeePerGasNotFoundError(err):
-		log.Warn("contract callet eth_maxPriorityFeePerGas is unsupported by current backend, using fallback gasTipCap")
+		log.Warn("contract caller eth_maxPriorityFeePerGas is unsupported by current backend, using fallback gasTipCap")
 		opts.GasTipCap = FallbackGasTipCap
 		return c.TreasureManagerContract.SetWithdrawManager(opts, address)
 	default:
